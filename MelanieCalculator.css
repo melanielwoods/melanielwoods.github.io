@@ -1,0 +1,14 @@
+table{
+    width: 10%;
+    border: 5px;
+    background-color: lightgray;
+}
+td{
+    font-size: 12px;
+    padding: 1px;
+    border-collapse: collapse;
+    /* border-spacing: 3px; */
+}
+tr{
+    padding-bottom: 2px;
+    line-height: 25px;

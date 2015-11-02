@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <meta charset="utf-8">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="MelanieCSS.css">
+    </head>
+    <body>
+        <form> 
+            <table>
+                <tr><input type="text" name="calculatorValue" id="calculatorValue" </tr>
+                <tr>
+                    <td><input type="button" name="Clear" value="C" onclick="calculatorValue.value = ''"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="seven" value="7" onclick="SetValueText(7)" ></td>
+                    <td><input type="button" name="eight" value="8" onclick="SetValueText(8)" </td>
+                    <td><input type="button" name="nine" value="9" onclick="SetValueText(9)"</td>
+                    <td><input type="button" name="divide" value="/" onclick="setOperand(/)"</td>
+                    <td><input type="button" name="xsquare" onclick="square()"</td>x<sup>2</sup> <!-- how to pass parameter???? -->
+                </tr>
+                <tr>
+                    <td><input type="button" name="four" value="4" onclick="SetValueText(4)"></td>
+                    <td><input type="button" name="five" value="5" onclick="SetValueText(5)" </td>
+                    <td><input type="button" name="six" value="6" onclick="SetValueText(6)"</td>
+                    <td><input type="button" name="multiply" value="*" onclick="setOperand(*)"</td>
+                    <td><input type="button" name="oneoverx" value="1/x" onclick="reciprocal()" </td> <!-- how to pass parameter???? -->
+                </tr>
+                <tr>
+                    <td><input type="button" name="one" value="1" onclick="SetValueText(1)"></td>
+                    <td><input type="button" name="two" value="2" onclick="SetValueText(2)" </td>
+                    <td><input type="button" name="three" value="3" onclick="SetValueText(3)"</td>
+                    <td><input type="button" name="subtract" value="-" onclick="setOperand(-)" </td>
+                    <td><input type="button" name="equals" value="=" rowspan="2"</td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="zero" colspan="2" value="0" onclick="SetValueText(0)"></td>
+                    <td><input type="button" name="period" value="." onclick="SetValueText(.)" </td>
+                    <td><input type="button" name="add" value="+" onclick ="setOperand(+)" </td>
+                </tr>
+            </table>
+        </form>  
+    </body>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="MelanieCalculator.js"></script>
+</html>

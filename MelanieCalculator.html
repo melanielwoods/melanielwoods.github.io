@@ -2,7 +2,7 @@
 <html>
     
     <head>
-    <meta charset="utf-8">
+        <meta charset="utf-8">
         <title>Calculator</title>
         <link rel="stylesheet" href="MelanieCSS.css">
     </head>
@@ -14,30 +14,31 @@
                     <td><input type="button" name="Clear" value="C" onclick="calculatorValue.value = ''"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" name="seven" value="7" onclick="SetValueText(7)" ></td>
-                    <td><input type="button" name="eight" value="8" onclick="SetValueText(8)" </td>
-                    <td><input type="button" name="nine" value="9" onclick="SetValueText(9)"</td>
-                    <td><input type="button" name="divide" value="/" onclick="setOperand(/)"</td>
-                    <td><input type="button" name="xsquare" onclick="square()"</td>x<sup>2</sup> <!-- how to pass parameter???? -->
+                    <td><button type="button" name="seven" onclick="SetValueText(7)">7</button></td>
+                    <td><button type="button" name="eight" onclick="SetValueText(8)">8</button></td>
+                    <td><button type="button" name="nine" onclick="SetValueText(9)">9</button></td>
+                    <td><button type="button" name="divide" value="/"  onclick="setOperand('/')">/</button></td>
+                    <td><button type="button" name="xsquare" onclick="square()">x<sup>2</sup></button></td>
                 </tr>
                 <tr>
-                    <td><input type="button" name="four" value="4" onclick="SetValueText(4)"></td>
-                    <td><input type="button" name="five" value="5" onclick="SetValueText(5)" </td>
-                    <td><input type="button" name="six" value="6" onclick="SetValueText(6)"</td>
-                    <td><input type="button" name="multiply" value="*" onclick="setOperand(*)"</td>
-                    <td><input type="button" name="oneoverx" value="1/x" onclick="reciprocal()" </td> <!-- how to pass parameter???? -->
+                    <td><button type="button" name="four" value="4" onclick="SetValueText(4)">4</button></td>
+                    <td><button type="button" name="five" value="5" onclick="SetValueText(5)">5</button> </td>
+                    <td><button type="button" name="six" value="6" onclick="SetValueText(6)">6</button></td>
+                    <td><button type="button" name="multiply" value="*" onclick="setOperand('*')">*</button></td>
+                    <td><input type="button" name="oneoverx" value="1/x" onclick="reciprocal()"></td>
+                    <!-- <td><button name="oneoverx" onclick="reciprocal()">1/x</button></td> (USING THIS LINE WILL NOT LEAVE THE VALUE DISPLAYED ON THE SCREEN -->
                 </tr>
                 <tr>
-                    <td><input type="button" name="one" value="1" onclick="SetValueText(1)"></td>
-                    <td><input type="button" name="two" value="2" onclick="SetValueText(2)" </td>
-                    <td><input type="button" name="three" value="3" onclick="SetValueText(3)"</td>
-                    <td><input type="button" name="subtract" value="-" onclick="setOperand(-)" </td>
-                    <td><input type="button" name="equals" value="=" rowspan="2"</td>
+                    <td><button type="button" name="one" onclick="SetValueText(1)">1</button></td>
+                    <td><button type="button" name="two" onclick="SetValueText(2)">2</button> </td>
+                    <td><button type="button" name="three" onclick="SetValueText(3)">3</button></td>
+                    <td><button type="button" name="subtract" onclick="setOperand('-')">-</button> </td>
+                    <td><button type="button" name="equals" rowspan="2" onclick="doMath()">=</td>
                 </tr>
                 <tr>
-                    <td><input type="button" name="zero" colspan="2" value="0" onclick="SetValueText(0)"></td>
-                    <td><input type="button" name="period" value="." onclick="SetValueText(.)" </td>
-                    <td><input type="button" name="add" value="+" onclick ="setOperand(+)" </td>
+                    <td><button type="button" name="zero" colspan="2" onclick="SetValueText(0)">0</button></td>
+                    <td><button type="button" name="period" value="." onclick="SetValueText('.')">.</button> </td>
+                    <td><button type="button" name="add" onclick ="setOperand('+')">+</button></td>
                 </tr>
             </table>
         </form>  
